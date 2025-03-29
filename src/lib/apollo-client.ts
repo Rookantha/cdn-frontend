@@ -8,6 +8,7 @@ const httpLink = createHttpLink({
 const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache(),
+  credentials: 'include', // Include credentials for CORS requests
 });
 
 export default client;
