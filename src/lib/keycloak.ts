@@ -2,7 +2,7 @@ import Keycloak from "keycloak-js";
 
 const keycloak = new Keycloak({
   url: "http://localhost:8090",
-  realm: "cdn",
+  realm: "contentnexus",
   clientId: "iam-service", // Make sure this matches your Keycloak client ID
 });
 
